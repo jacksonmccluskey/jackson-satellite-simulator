@@ -1,0 +1,27 @@
+{
+	"name": "satellite-telemetry-simulator",
+	"version": "1.0.0",
+	"description": "Simulate Satellite Telemetry HTTPS Requests & TCP Connections",
+	"main": "index.js",
+	"scripts": {
+		"device": "npx ts-node device/simulator.ts",
+		"satellite": "npx ts-node satellite/simulator.ts",
+		"gateway": "npx ts-node gateway/simulator.ts",
+		"ingest-api": "npx ts-node ingest/api/server.ts",
+		"ingest-socket": "npx ts-node ingest/socket/server.ts",
+		"client-api": "npx ts-node client/api/server.ts",
+		"client-ui": "react-scripts start"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@chakra-ui/react": "^2.8.2",
+		"@emotion/react": "^11.12.0",
+		"@emotion/styled": "^11.12.0",
+		"framer-motion": "^11.3.7",
+		"npx": "^10.2.2",
+		"react-dom": "^18.3.1",
+		"ts-node": "^10.9.2"
+	}
+}
